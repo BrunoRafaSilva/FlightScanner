@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package airports;
+
+// Airport type-ahead search service.
+service AirportService {
+  rpc Search (SearchRequest) returns (SearchReply);
+}
+
+message SearchRequest {
+  string q = 1;
+  int32 limit = 2;
+}
+
+message Airport {
+  string iata = 1;
+  string name = 2;
+  string municipality = 3;
+  string country = 4;
+}
+
+message SearchReply {
+  repeated Airport airports = 1;
+}
