@@ -116,6 +116,11 @@ npm install
 cp .env.example .env          # VITE_API_URL=http://localhost:3000
 npm run dev
 ```
+Wait this console to do the next step:
+
+<p align="left">
+  <img src="media/screen-07.png" alt="Airline Claims POC" width="300" />
+</p>
 
 Then open the app and sign in with the demo account:
 
